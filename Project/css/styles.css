@@ -1,4 +1,23 @@
 @import "reset.css";
+@import "swiper.css";
 /* component */
 @import "component/header.css";
+@import "component/footer.css";
+/* container */
+@import "container/login.css";
+@import "container/visualswiper.css";
+@import "container/mainmenu.css";
+@import "container/maininfo.css";
+@import "container/mainproduct.css";
+@import "container/event.css";
+@import "container/snssection.css";
+@import "container/store.css";
 
+
+
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+.home-main-wrap {
+  padding-top: 8.7em;
+  width: 100%;
+}

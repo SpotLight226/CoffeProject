@@ -1,0 +1,46 @@
+.home-main-wrap .main-product-section {
+  padding: 5.625em 0;
+}
+.main-product-section .product-wrapper {
+  max-width: 1430px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main-product-section .product-wrapper .title-box {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.menu-slide .swiper-container3 {
+  height: 532.26px;
+  overflow: hidden;
+}
+
+.menu-slide .swiper-container3 .swiper-wrapper {
+  width: 100%;
+}
+.swiper-container3 .swiper-wrapper .swiper-slide a {
+  height: 100%;
+  display: block;
+}
+
+.img-bx {
+  height: 460px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.txt-bx {
+  padding: 0 0.9375em;
+  padding-top: 2.5em;
+  text-align: center;
+}
+.txt-bx .tit {
+  letter-spacing: -1px;
+  font-size: 1.25em;
+  font-weight: 800;
+}

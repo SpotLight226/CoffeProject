@@ -1,0 +1,59 @@
+.swiper {
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+
+.swiper .swiper-wrapper {
+  position: relative;
+}
+
+.swiper .swiper-wrapper .swiper-slide a {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.main-pagination {
+  width: 100%;
+  max-width: 1048px;
+  position: absolute;
+  z-index: 2;
+  bottom: 50%;
+}
+
+.vertical-warp {
+  background: #572a31;
+  height: 4.375em;
+  width: 100%;
+}
+
+.vertical-warp .vertical-inner {
+  width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.vertical-inner .vertical-icon {
+  position: absolute;
+  top: 17px;
+}
+
+.vertical-inner .swiper-container,
+.swiper-container2 {
+  float: left;
+  width: 50%;
+  height: 70px;
+  width: 489px;
+  margin: 0 auto;
+  padding: 0 50px 0 75px;
+}
+.vertical-inner .swiper-container,
+.swiper-container2 .swiper-slide a {
+  display: block;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+}

@@ -1,0 +1,43 @@
+.home-main .login-content {
+  width: 100%;
+}
+
+.login-content .inner-content {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inner-content .content-box {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.content-box .member-warp {
+  width: 100%;
+  margin: 20px auto 40px auto;
+}
+
+.member-tit h2 {
+  font-size: 24px;
+}
+
+.member-cont {
+  padding: 6% 0 8% 0;
+  width: 100%;
+}
+
+.login-box {
+  overflow: hidden;
+}
+
+.login-box .login-input-box {
+  float: left;
+}
+
+.login-box .login-input-box input {
+  display: block;
+}
+.login-box button {
+  float: right;
+}

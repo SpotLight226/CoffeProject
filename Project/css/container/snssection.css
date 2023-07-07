@@ -1,0 +1,15 @@
+.home-main-wrap .main-sns-section {
+  padding: 5.625em 0;
+}
+.main-sns-section .sns-wrapper {
+  max-width: 1430px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main-sns-section .sns-wrapper .title-box {
+  text-align: center;
+  margin-bottom: 4em;
+}
