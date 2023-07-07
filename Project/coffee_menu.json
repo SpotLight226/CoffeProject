@@ -1,0 +1,124 @@
+{
+  "members": [
+    {
+      "k_name": "에스프레소",
+      "e_name": "Espresso",
+      "content": "스타벅스 에스프레소는 향기로운 크레마 층과 바디 층, 하트 층으로 이루어져 있으며, 입안 가득히 커피와 달콤한 카라멜 향이 느껴지는 커피 음료",
+      "kcal": 5,
+      "fat": 0,
+      "protein": 0,
+      "salt": 0,
+      "sugars": 0,
+      "caffeine": 190,
+      "allergy": "알레르기 유발요인 : 없음"
+    },
+    {
+      "k_name": "아메리카노",
+      "e_name": "Americano",
+      "content": "진한 에스프레소와 뜨거운 물을 섞어 스타벅스의 깔끔하고 강렬한 에스프레소를 가장 부드럽게 잘 느낄 수 있는 커피",
+      "kcal": 10,
+      "fat": 0,
+      "protein": 1,
+      "salt": 5,
+      "sugars": 0,
+      "caffeine": 150,
+      "allergy": "알레르기 유발요인 : 없음"
+    },
+    {
+      "k_name": "카페라떼",
+      "e_name": "Caffe Latte",
+      "content": "풍부하고 진한 에스프레소가 신선한 스팀 밀크를 만나 부드러워진 커피 위에 우유 거품을 살짝 얹은 대표적인 커피 라떼",
+      "kcal": 180,
+      "fat": 5,
+      "protein": 10,
+      "salt": 115,
+      "sugars": 13,
+      "caffeine": 75,
+      "allergy": "알레르기 유발요인 : 우유"
+    },
+    {
+      "k_name": "카푸치노",
+      "e_name": "Cappuccino",
+      "content": "풍부하고 진한 에스프레소에 따뜻한 우유와 벨벳 같은 우유 거품이 1:1 비율로 어우러져 마무리된 커피 음료",
+      "kcal": 110,
+      "fat": 3,
+      "protein": 6,
+      "salt": 70,
+      "sugars": 8,
+      "caffeine": 75,
+      "allergy": "알레르기 유발요인 : 우유"
+    },
+    {
+      "k_name": "카라멜 마끼아또",
+      "e_name": "Caramel Macchiato",
+      "content": "향긋한 바닐라 시럽과 따뜻한 스팀 밀크 위에 풍성한 우유 거품을 얹고 점을 찍듯이 에스프레소를 부은 후 벌집 모양으로 카라멜 드리즐을 올린 달콤한 커피 음료",
+      "kcal": 200,
+      "fat": 5,
+      "protein": 8,
+      "salt": 130,
+      "sugars": 22,
+      "caffeine": 75,
+      "allergy": "알레르기 유발요인 : 대두/우유"
+    },
+    {
+      "k_name": "바닐라 라떼",
+      "e_name": "Vanilla Bean Latte",
+      "content": "리저브만을 위한 프리미엄 바닐라 빈 시럽이 부드럽게 어우러진 카페 라떼",
+      "kcal": 245,
+      "fat": 6,
+      "protein": 9,
+      "salt": 150,
+      "sugars": 27,
+      "caffeine": 210,
+      "allergy": "알레르기 유발요인 : 우유"
+    },
+    {
+      "k_name": "헤이즐넛 라떼",
+      "e_name": "Hazelnut Double Shot",
+      "content": "신선하게 제조된 더블 샷 믹스에 헤이즐넛 시럽을 넣고 에스프레소 샷, 얼음이 어우러져 핸드 쉐이킹한 음료",
+      "kcal": 125,
+      "fat": 5,
+      "protein": 3,
+      "salt": 28.5,
+      "sugars": 14,
+      "caffeine": 150,
+      "allergy": "알레르기 유발요인 : 우유"
+    },
+    {
+      "k_name": "카페모카",
+      "e_name": "Caffe Mocha",
+      "content": "진한 초콜릿 모카 시럽과 풍부한 에스프레소를 스팀 밀크와 섞어 휘핑크림으로 마무리한 음료로 진한 에스프레소와 초콜릿 맛이 어우러진 커피",
+      "kcal": 290,
+      "fat": 9,
+      "protein": 10,
+      "salt": 105,
+      "sugars": 25,
+      "caffeine": 95,
+      "allergy": "알레르기 유발요인 : 우유"
+    },
+    {
+      "k_name": "화이트 카페모카",
+      "e_name": "White Chocolate Mocha",
+      "content": "달콤하고 부드러운 화이트 초콜릿 시럽과 에스프레소를 스팀 밀크와 섞어 휘핑크림으로 마무리한 음료로 달콤함과 강렬한 에스프레소가 부드럽게 어우러진 커피",
+      "kcal": 345,
+      "fat": 11,
+      "protein": 11,
+      "salt": 150,
+      "sugars": 35,
+      "caffeine": 75,
+      "allergy": "알레르기 유발요인 : 우유"
+    },
+    {
+      "k_name": "아포가토",
+      "e_name": "Affogato",
+      "content": "에스프레소 투 샷이 바닐라 아이스크림과 진하게 어우러진 정통 아포가토",
+      "kcal": 240,
+      "fat": 10,
+      "protein": 4,
+      "salt": 70,
+      "sugars": 18,
+      "caffeine": 210,
+      "allergy": "알레르기 유발요인 : 없음"
+    }
+  ]
+}
