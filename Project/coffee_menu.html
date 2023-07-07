@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- 모든 페이지에는 이것만 import -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/component/coffee_menu.css" />
+
+    <!-- 스와이퍼 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  </head>
+  <body>
+    <header></header>
+
+    <section style="padding-top: 160px">
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="slid_img/1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="slid_img/3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="slid_img/4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="slid_img/5.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          loop: true,
+          autoplay: { //자동재생 기능
+                delay: 5000,
+            },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
+
+      <h2>음료</h2>
+
+      <dt>
+        <p>에스프레소</p>
+        <i class="icon"><img src="coffee_img/logo_decaf.png" alt=""></i>
+        <span>에스프레소 샷 추가 가능 (일부 음료 제외)</span>
+      </dt>
+      <dd>
+        <ul>
+          <li>
+            <a href=""><img src="coffee_img/에스프레소.jpg" alt="에스프레소"></a>
+            <div class="hover-cont">
+              <a href="#">에스프레소</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/아메리카노.jpg" alt="아메리카노"></a>
+            <div class="hover-cont">
+              <a href="#">아메리카노</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/카페라떼.jpg" alt="카페라떼"></a>
+            <div class="hover-cont">
+              <a href="#">카페라떼</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/카푸치노.jpg" alt="카푸치노"></a>
+            <div class="hover-cont">
+              <a href="#">카푸치노</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/카라멜마끼아또.jpg" alt="카라멜마끼아또"></a>
+            <div class="hover-cont">
+              <a href="#">카라멜 마끼아또</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/바닐라라떼.jpg" alt="바닐라라떼"></a>
+            <div class="hover-cont">
+              <a href="#">바닐라 라떼</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/헤이즐넛라떼.jpg" alt="헤이즐넛라떼"></a>
+            <div class="hover-cont">
+              <a href="#">헤이즐넛 라떼</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/카페모카.jpg" alt="카페모카"></a>
+            <div class="hover-cont">
+              <a href="#">카페모카</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/화이트카페모카.jpg" alt="화이트카페모카"></a>
+            <div class="hover-cont">
+              <a href="#">화이트 카페모카</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/아포가토.jpg" alt="아포가토"></a>
+            <div class="hover-cont">
+              <a href="#">아포가토</a>
+            </div>
+          </li>
+
+        </ul>
+
+      </dd>
+
+
+      <dt>
+        <p>콜드 블루 커피</p>
+        <i class="icon"><img src="coffee_img/logo_decaf.png" alt=""></i>
+        <span>에스프레소 샷 추가 가능 (일부 음료 제외)</span>
+      </dt>
+      <dd>
+        <ul>
+          <li>
+            <a href=""><img src="coffee_img/나이트로콜드블루.jpg" alt="나이트로콜드블루"></a>
+            <div class="hover-cont">
+              <a href="">나이트로 콜드 블루</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/콜드블루.jpg" alt="콜드블루"></a>
+            <div class="hover-cont">
+              <a href="">콜드 블루</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/리저브 콜드 브루.jpg" alt="리저브 콜드 브루"></a>
+            <div class="hover-cont">
+              <a href="">리저브 콜드 브루</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/돌체콜드블루.jpg" alt="돌체콜드블루"></a>
+            <div class="hover-cont">
+              <a href="">돌체 콜드 블루</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/민트콜드블루.jpg" alt="민트콜드블루"></a>
+            <div class="hover-cont">
+              <a href="">민트 콜드 블루</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/오트콜드블루.jpg" alt="오트콜드블루"></a>
+            <div class="hover-cont">
+              <a href="">오트 콜드 블루</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/콜드 브루 몰트.jpg" alt="콜드 브루 몰트"></a>
+            <div class="hover-cont">
+              <a href="">콜드 브루 몰트</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/콜드 브루 플로트.jpg" alt="콜드 브루 플로트"></a>
+            <div class="hover-cont">
+              <a href="">콜드 브루 플로트</a>
+            </div>
+          </li>
+        </ul>
+      </dd>
+
+
+      <dt>
+        <p>피지오</p>
+        <i class="icon"><img src="coffee_img/logo_decaf.png" alt=""></i>
+        <span>에스프레소 샷 추가 가능 (일부 음료 제외)</span>
+      </dt>
+      <dd>
+        <ul>
+          <li>
+            <a href=""><img src="coffee_img/유자 패션 피지오.jpg" alt="유자 패션 피지오"></a>
+            <div class="hover-cont">
+              <a href="">유자 패션 피지오</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/쿨 라임 피지오.jpg" alt="쿨 라임 피지오"></a>
+            <div class="hover-cont">
+              <a href="">쿨 라임 피지오</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/피치 딸기 피지오.jpg" alt="피치 딸기 피지오"></a>
+            <div class="hover-cont">
+              <a href="">피치 딸기 피지오</a>
+            </div>
+          </li>
+        </ul>
+      </dd>
+
+
+      <dt>
+        <p>프라푸치노</p>
+        <i class="icon"><img src="coffee_img/logo_decaf.png" alt=""></i>
+        <span>에스프레소 샷 추가 가능 (일부 음료 제외)</span>
+      </dt>
+      <dd>
+        <ul>
+          <li>
+            <a href=""><img src="coffee_img/녹차프라페.jpg" alt="녹차프라페"></a>
+            <div class="hover-cont">
+              <a href="">말차 크림 프라푸치노</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/화이트 타이거 프라푸치노.jpg" alt="화이트 타이거 프라푸치노"></a>
+            <div class="hover-cont">
+              <a href="">화이트 타이거 프라푸치노</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/커피프라페.jpg" alt="커피프라페"></a>
+            <div class="hover-cont">
+              <a href="">에스프레소 프라푸치노</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/초코프라페.jpg" alt="초코프라페"></a>
+            <div class="hover-cont">
+              <a href="">초콜릿 크림 칩 프라푸치노</a>
+            </div>
+          </li>
+        </ul>
+      </dd>
+       
+
+      <dt>
+        <p>티</p>
+        <i class="icon"><img src="coffee_img/logo_decaf.png" alt=""></i>
+        <span>에스프레소 샷 추가 가능 (일부 음료 제외)</span>
+      </dt>
+      <dd>
+        <ul>
+          <li>
+            <a href=""><img src="coffee_img/녹차.jpg" alt="녹차"></a>
+            <div class="hover-cont">
+              <a href="">제주 유기 녹차</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/민트 블렌드 티.jpg" alt="민트 블렌드 티"></a>
+            <div class="hover-cont">
+              <a href="">민트 블렌드 티</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/얼그레이티.jpg" alt="얼그레이티"></a>
+            <div class="hover-cont">
+              <a href="">얼 그레이 티</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/유즈베리티.jpg" alt="유즈베리티"></a>
+            <div class="hover-cont">
+              <a href="">유스베리 티</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/잉글리쉬 브렉퍼스트 티.jpg" alt="잉글리쉬 브렉퍼스트 티"></a>
+            <div class="hover-cont">
+              <a href="">잉글리쉬 브렉퍼스트 티</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/자몽 허니 블랙 티.jpg" alt="자몽 허니 블랙 티"></a>
+            <div class="hover-cont">
+              <a href="">자몽 허니 블랙 티</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="coffee_img/캐모마일 블렌드 티.jpg" alt="캐모마일 블렌드 티"></a>
+            <div class="hover-cont">
+              <a href="">캐모마일 블렌드 티</a>
+            </div>
+          </li>
+        </ul>
+      </dd>
+            
+   
+    
+    
+    </section>
+
+    <footer></footer>
+
+    <!-- header의 js -->
+    <script src="js/main.js"></script>
+    <script>
+      var a = document.querySelectorAll(".hover-cont > a");
+      
+
+      for(var i = 0; i < a.length; i++) {
+        a[i].onclick = function() {
+          
+          var cont = event.target.innerHTML;
+          sessionStorage.setItem(1, cont);
+          window.open("details.html","coffee_details","width=730px height=600px top=200px left=500px");
+
+        }
+      }
+
+      
+
+    </script>
+  </body>
+</html>

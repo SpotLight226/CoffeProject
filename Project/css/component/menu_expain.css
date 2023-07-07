@@ -1,0 +1,115 @@
+.caffeLatte {
+    width: 610px;
+    margin: 50px auto;
+    font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    line-height: 1;
+}
+
+.top {
+    position: relative;
+}
+.top > h4 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+.top > h4 span {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top > .myDrink {
+    position: absolute;
+    right: 0px;
+    top: 7px;
+
+    width: 111px;
+    height: 28px;
+    font-size: 12px;
+    background-color: #006633;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.top > p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #444;
+    font-size: 16px;
+}
+
+.title {
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    height: 60px;
+    line-height: 60px;
+}
+.title .left {
+    float: left;
+    font-size: 17px;
+    padding-left: 10px;
+    color: #222;
+}
+.title .right {
+    float: right;
+    font-size: 17px;
+    padding-right: 10px;
+    color: #444;
+}
+
+
+
+.info {
+    color: #444444;
+    overflow: hidden;
+    width: 100%;
+    margin: 20px 0; 
+}
+
+.info > .left {
+   float: left;
+   width: 50%;
+   border-right: 1px dashed #ddd;
+
+}
+.info > .right {
+    float: right;
+    width: 50%;
+}
+
+.info ul li {
+    padding: 0 10px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.info dl {
+    overflow: hidden;
+    width: 100%;
+    font-size: 14px;
+}
+.info dl dt {
+    float: left;
+    width: 85%;
+}
+.info dl dd {
+    float: right;
+    width: 15%;
+}
+
+
+
+.bottom {
+    margin: 0 0 23px;
+    padding: 13px 11px;
+    color: #444;
+    font-size: 14px;
+    background-color: #f4f4f2;
+    border-radius: 3px;
+    line-height: 1.6;
+}
+

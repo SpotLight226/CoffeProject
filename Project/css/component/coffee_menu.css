@@ -1,0 +1,103 @@
+section {
+    margin: 0 auto;
+    width: 1100px;
+    font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+
+}
+
+.swiper {
+    width: 1100px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+h2 {
+    height: 80px;
+    padding: 30px 0px 0px;
+    font-size: 25px;
+}
+
+dt {
+    padding: 11px;
+    margin: 20px 0;
+    background-color: #f4f4f2;
+    border-radius: 3px;
+    overflow: hidden;
+}
+dt > p {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    line-height: 34px;
+}
+dt > i {
+    float: left;
+    display: block;
+    width: 42px;
+    height: 35px;
+}
+
+dt > i > img{
+    max-width: 100%;
+    margin: 1px 7px;
+} 
+dt > span {
+    float: left;
+    margin: 0 0 0 10px;
+    line-height: 34px;
+    font-size: 12px;
+}
+
+dd {
+    margin-bottom: 80px;
+}
+
+ul {
+  overflow: hidden;
+}
+
+li {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    position: relative;
+}
+
+li > a > img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+ul li .hover-cont {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 264px;
+    height: 276px;
+
+    background-color: black;
+    opacity: 0;
+    text-align: center;
+    transition: opacity .5s ease-in-out;
+}
+
+ul li:hover > .hover-cont {
+    opacity: 0.7;
+}
+
+li .hover-cont > a {
+    color: white;
+    line-height: 262px;
+    font-size: 20px;
+    display: inline-block;
+    width: 100%;
+}
