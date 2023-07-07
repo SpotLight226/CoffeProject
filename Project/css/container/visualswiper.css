@@ -48,12 +48,22 @@
   height: 70px;
   width: 489px;
   margin: 0 auto;
-  padding: 0 50px 0 75px;
+  padding: 0 35px 0 75px;
+  margin-left: 20px;
 }
-.vertical-inner .swiper-container,
-.swiper-container2 .swiper-slide a {
+.vertical-inner .swiper-container .swiper-wrapper .swiper-slide a {
   display: block;
   text-align: center;
   line-height: 70px;
   color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.vertical-inner .swiper-container2 .swiper-wrapper .swiper-slide a {
+  display: block;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
 }

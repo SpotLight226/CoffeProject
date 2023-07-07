@@ -1,119 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/component/menu_expain.css">
-    
-</head>
-<body>
-
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/component/menu_expain.css" />
+  </head>
+  <body>
     <section class="caffeLatte">
-        <div class="top">
-            <h4 id="k_name">
-                
-                <br>
-                <span id="e_name"></span>
-            </h4>
-            <button class="myDrink">나만의 음료로 등록</button>
-            <p id="content"></p>
+      <div class="top">
+        <h4 id="k_name">
+          <br />
+          <span id="e_name"></span>
+        </h4>
+        <button class="myDrink">나만의 음료로 등록</button>
+        <p id="content"></p>
+      </div>
+      <div class="middle">
+        <div class="title">
+          <p class="left">제품영양정보</p>
+          <p class="right">Tall(톨) / 355ml (12 fl oz)</p>
         </div>
-        <div class="middle">
-            <div class="title">
-                <p class="left">제품영양정보</p>
-                <p class="right">Tall(톨) / 355ml (12 fl oz)</p>
-            </div>
-            <div class="info">
-                <ul class="left">
-                    <li>
-                        <dl>
-                            <dt>1회 제공량 (kcal)</dt>
-                            <dd id="kcal"></dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>포화지방 (g)</dt>
-                            <dd id="fat"></dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>단백질 (g)</dt>
-                            <dd id="protein"></dd>
-                        </dl>
-                    </li>
-                </ul>
-                <ul class="right">
-                    <li>
-                        <dl>
-                            <dt>나트륨 (mg)</dt>
-                            <dd id="salt"></dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>당류 (g)</dt>
-                            <dd id="sugars"></dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>카페인 (mg)</dt>
-                            <dd id="caffeine"></dd>
-                        </dl>
-                    </li>
-                </ul>
-            </div>
-            <div class="bottom">
-                <p id="allergy"></p>
-            </div>
+        <div class="info">
+          <ul class="left">
+            <li>
+              <dl>
+                <dt>1회 제공량 (kcal)</dt>
+                <dd id="kcal"></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>포화지방 (g)</dt>
+                <dd id="fat"></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>단백질 (g)</dt>
+                <dd id="protein"></dd>
+              </dl>
+            </li>
+          </ul>
+          <ul class="right">
+            <li>
+              <dl>
+                <dt>나트륨 (mg)</dt>
+                <dd id="salt"></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>당류 (g)</dt>
+                <dd id="sugars"></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>카페인 (mg)</dt>
+                <dd id="caffeine"></dd>
+              </dl>
+            </li>
+          </ul>
         </div>
+        <div class="bottom">
+          <p id="allergy"></p>
+        </div>
+      </div>
 
-        <script>
+      <script>
+        var value = sessionStorage.getItem(1);
+        var k_name = document.getElementById("k_name");
+        var e_name = document.getElementById("e_name");
+        var content = document.getElementById("content");
+        var kcal = document.getElementById("kcal");
+        var fat = document.getElementById("fat");
+        var protein = document.getElementById("protein");
+        var salt = document.getElementById("salt");
+        var sugars = document.getElementById("sugars");
+        var caffeine = document.getElementById("caffeine");
+        var allergy = document.getElementById("allergy");
 
-            var value = sessionStorage.getItem(1);
-            var k_name = document.getElementById("k_name");
-            var e_name = document.getElementById("e_name");
-            var content = document.getElementById("content");
-            var kcal = document.getElementById("kcal");
-            var fat = document.getElementById("fat");
-            var protein = document.getElementById("protein");
-            var salt = document.getElementById("salt");
-            var sugars = document.getElementById("sugars");
-            var caffeine = document.getElementById("caffeine");
-            var allergy = document.getElementById("allergy");
-
-            fetch('coffee_menu.json').then(function(response) {
-                return response.json();
-            }).then(function(result) {
-                var arr = result.members;
-                for(var i = 0; i < arr.length; i++){
-                    if(arr[i].k_name == value) {
-                        k_name.innerHTML = arr[i].k_name;
-                        e_name.innerHTML = arr[i].e_name;
-                        content.innerHTML = arr[i].content;
-                        kcal.innerHTML = arr[i].kcal;
-                        fat.innerHTML = arr[i].fat;
-                        protein.innerHTML = arr[i].protein;
-                        salt.innerHTML = arr[i].salt;
-                        sugars.innerHTML = arr[i].sugars;
-                        caffeine.innerHTML = arr[i].caffeine;
-                        allergy.innerHTML = arr[i].allergy;
-                    }
-                }
-            })
-
-
-            var btn = document.querySelector(".myDrink");
-            btn.onclick = function() {
-                alert("나만의 음료로 등록되었습니다.");
+        fetch("coffee_menu.json")
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (result) {
+            var arr = result.members;
+            for (var i = 0; i < arr.length; i++) {
+              if (arr[i].k_name == value) {
+                k_name.innerHTML = arr[i].k_name;
+                e_name.innerHTML = arr[i].e_name;
+                content.innerHTML = arr[i].content;
+                kcal.innerHTML = arr[i].kcal;
+                fat.innerHTML = arr[i].fat;
+                protein.innerHTML = arr[i].protein;
+                salt.innerHTML = arr[i].salt;
+                sugars.innerHTML = arr[i].sugars;
+                caffeine.innerHTML = arr[i].caffeine;
+                allergy.innerHTML = arr[i].allergy;
+              }
             }
-        </script>
-        
+          });
+
+        var btn = document.querySelector(".myDrink");
+        btn.onclick = function () {
+          alert("나만의 음료로 등록되었습니다.");
+        };
+      </script>
     </section>
-</body>
+  </body>
 </html>
